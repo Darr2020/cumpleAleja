@@ -25,7 +25,7 @@
                 <div class="enlaces">
                     <a href="index.html"> <i>18</i> Enero</a>
                     <a href="galeria.html">Galeria</a>
-                    <a href="dedicatoria.html">la mejor</a>
+                    <a href="dedicatoria.html">la Mejor</a>
                     <a href="veinte.html"><i>20</i> Enero</a>
                     <button class="switch" id="switch">
                         <span><i class="fas fa-sun"></i></span>
@@ -42,12 +42,14 @@
             </div>
         </main>   
     </div>
-    <audio autoplay>
+    <audio controls="controls" autoplay>
         <source src="music/hb.mp3" type="audio/mpeg"/>
     </audio>
 
         
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
     <script src="js/jquery.arctext.js"></script>
     <script src="http://www.google.com/jsapi"></script>
     <script src="js/gallery.js"></script>
@@ -56,14 +58,19 @@
     <script src="js/snow.js"></script>
 
     <script>
-    
-
     var typed = new Typed(".type", {
         strings :[ "Amor de mi vida", "que Dios te bendiga siempre"],
          typeSpeed: 100,
          loop: true
     });
-
+    </script>
+    <script>
+    Swal.fire({
+  title: 'Hola Alejandra Suarez!',
+  text: 'Para mejor experiencia activa el modo nocturno',
+  icon: 'info',
+  confirmButtonText: 'Cool'
+})
     </script>
     
 </body>
