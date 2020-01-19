@@ -24,11 +24,6 @@ body {
     padding: 50px 0;
   }
 
-
-
-body.dark main {
-    color: rgb(224, 224, 224);
-  }
   main {
     width: 75%;
     margin: auto;
@@ -39,4 +34,8 @@ body.dark main {
     font-size: 45px;
     color: #222222;
     text-align: center;
+  }
+
+  body.dark main h2{
+    color: rgb(224, 224, 224);
   }
