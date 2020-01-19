@@ -1,0 +1,186 @@
+/*Css*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    cursor: url(../icons/cake.svg), auto;
+  }
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    transition: .5s ease all;
+}
+body.dark {
+  background-color: #111111;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.img-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 'img-1 img-2 img-3 img-3'
+                         'img-1 img-4 img-5 img-6'
+                         'img-7 img-7 img-8 img-6'
+
+                         'img-9 img-10 img-11 img-11'
+                         'img-9 img-12 img-13 img-14'
+                         'img-15 img-15 img-16 img-14';
+}
+
+.img-gallery a{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.img-gallery a i{
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: .4rem;
+    transition: opacity .5s;
+    /*color: #d30058;*/
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.t1{ color: #fff; }
+.t3{ color: #e7000c; }
+.t1 .f{ color: #e7000c; }
+
+.t5{font-size: 16px;}
+.t6{ font-size: 17.5px;}
+.t8{font-size: 17px;}
+
+.t13{font-size: 15px;}
+.t16{font-size: 17.5px;}
+
+
+
+
+.img-gallery a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.img-gallery a i,
+.img-gallery a::before{
+    opacity: 1;
+}
+
+.img-gallery a:hover i,
+.img-gallery a:hover::before{
+    opacity: 0;
+}
+
+.img-1{
+    grid-area: img-1;
+    min-height: 51.5rem;
+    background-image: url(../images/img-1.jpg);
+}
+
+.img-2{
+    grid-area: img-2;
+    background-image: url(../images/img-2.jpg);
+}
+
+.img-3{
+    grid-area: img-3;
+    background-image: url(../images/img-3.jpg);
+}
+
+.img-4{
+    grid-area: img-4;
+    background-image: url(../images/img-4.jpg);
+}
+.img-5{
+    grid-area: img-5;
+    background-image: url(../images/img-5.jpg);
+}
+.img-6{
+    grid-area: img-6;
+    min-height: 51.5rem;
+    background-image: url(../images/img-6.jpg);
+}
+
+.img-7{
+    grid-area: img-7;
+    background-image: url(../images/img-7.jpg);
+}
+.img-8{
+    grid-area: img-8;
+    background-image: url(../images/img-8.jpg);
+}
+
+.img-9{
+    grid-area: img-9;
+    min-height: 51.5rem;
+    background-image: url(../images/img-9.jpg);
+}
+
+.img-10{
+    grid-area: img-10;
+    background-image: url(../images/img-10.jpg);
+}
+
+.img-11{
+    grid-area: img-11;
+    background-image: url(../images/img-11.jpg);
+}
+
+.img-12{
+    grid-area: img-12;
+    background-image: url(../images/img-12.jpg);
+}
+.img-13{
+    grid-area: img-13;
+    background-image: url(../images/img-13.jpg);
+}
+.img-14{
+    grid-area: img-14;
+    min-height: 51.5rem;
+    background-image: url(../images/img-14.jpg);
+}
+
+.img-15{
+    grid-area: img-15;
+    background-image: url(../images/img-15.jpg);
+}
+.img-16{
+    grid-area: img-16;
+    background-image: url(../images/img-16.jpg);
+}
