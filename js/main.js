@@ -25,20 +25,3 @@ google.setOnLoadCallback(function() {
 });
 
 function init() { $1.show().arctext({radius: 700}); };
-
-
-
-
-    var typed = new Typed(".type", {
-        strings :[ "Amor de mi vida", "que Dios te bendiga siempre"],
-         typeSpeed: 100,
-         loop: true
-    });
-
-
-    var typed = new Typed(".type2", {
-        strings :[ "Amor de mi vida", "que Dios te bendiga siempre"],
-         typeSpeed: 100,
-         loop: true
-    });
-

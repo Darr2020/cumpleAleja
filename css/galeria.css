@@ -8,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     -webkit-box-sizing: border-box;
-    cursor: url(../icons/cake.svg), auto;
+    cursor: url(../icons/star.svg), auto;
   }
 
 body{
@@ -65,7 +65,6 @@ body.dark {
     border: 2px solid rgba(255, 255, 255, .6);
     border-radius: .4rem;
     transition: opacity .5s;
-    /*color: #d30058;*/
     font-size: 18px;
     color: #fff;
 
