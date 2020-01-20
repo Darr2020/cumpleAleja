@@ -15,9 +15,7 @@ body {
   font-family: 'Pacifico', cursive;
 }
 
-body.dark {
-  background-color: #111111;
-}
+body.dark { background-color: #111111; }
 
 nav {
   background: #FEFEFE;
@@ -62,7 +60,6 @@ body.dark nav a:hover {
 nav .logotipo {
   font-size: 25px;
   font-weight: 700;
-  cursor: pointer;
 }
 
 nav .logotipo span {
@@ -138,7 +135,6 @@ nav .enlaces a:hover {
   border-radius: 100px;
   border: none;
   position: relative;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

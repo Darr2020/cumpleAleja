@@ -17,7 +17,7 @@ nav {
     -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
             box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
             font-family: 'pacifico';
-
+            text-decoration: none;
   }
   
   body.dark nav {
@@ -37,16 +37,15 @@ nav {
   nav .logotipo {
     font-size: 25px;
     font-weight: 700;
-    cursor: pointer;
   }
   
   nav .logotipo span {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    letter-spacing: 5px;
     text-shadow: -1px -1px 0 #0c59a1;
     color: #47a0f2;
+
   }
   
   nav .logotipo span:nth-child(even) {
@@ -97,6 +96,7 @@ nav {
     color: #222222;
     font-weight: 500;
     margin-right: 30px;
+    cursor: pointer;
   }
   
   nav .enlaces a i {
@@ -104,9 +104,7 @@ nav {
     color: #d30058;
   }
   
-  nav .enlaces a:hover {
-    color: #707070;
-  }
+  nav .enlaces a:hover { color: #707070; }
   
   .switch {
     background-color: #343D58;

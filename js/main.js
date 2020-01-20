@@ -5,21 +5,27 @@ btnSwitch.addEventListener('click', () => {
     btnSwitch.classList.toggle('active'); 
 });
 
-let $1	= $('#1').hide();
-
-      
-google.load('webfont','1');
-
-google.setOnLoadCallback(function() {
-    WebFont.load({
-        google		: {
-            families: ['Montserrat','Concert One']
-        },
-        fontactive: function(fontFamily, fontDescription) {
-            init();
-        },
-        
+$(function(){
+    $(".openB").click(function(){
+      $(".left").addClass("open");
+      setTimeout(function(){
+        $(".right").addClass("open");
+      }, 250);
+      setTimeout(function(){
+        $(".back").addClass("open");
+      }, 350);
+      $(".closeB").delay(1000).fadeIn();
     });
-});
-
-function init() { $1.show().arctext({radius: 700}); };
+  
+    $(".closeB").click(function(){
+      setTimeout(function(){
+        $(".left").removeClass("open");
+      }, 250);
+      $(".right").removeClass("open");
+      setTimeout(function(){
+        $(".back").removeClass("open");
+      }, 600);
+      $(".closeB").fadeOut();
+    });
+  });
+  
